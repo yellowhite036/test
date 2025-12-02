@@ -1,0 +1,9 @@
+# Watchdog Configuration
+# Disable IDLE task watchdog to prevent timeout during WiFi PHY initialization
+CONFIG_ESP_TASK_WDT_CHECK_IDLE_TASK_CPU0=n
+
+# Increase task watchdog timeout for WiFi operations
+CONFIG_ESP_TASK_WDT_TIMEOUT_S=10
+
+# Enable frame pointer for better debugging
+CONFIG_COMPILER_CG_FRAME_POINTER=y
